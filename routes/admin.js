@@ -25,11 +25,14 @@ router.get('/', function(req, res, next) {
     {
       name:"Realme pro",
       catagory:"mobile",
-      description:"An Apple product",
+      description:"A Realme product",
       image:"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRV5ujCqTacNsnhh6AM9mm1Q3drySz9nTUEKKn3NugL6WPT_LH1GnXE5GRc9i1knGzXNV4dg_I&usqp=CAc"
     },
   ]
   res.render('admin/view-products',{admin:true,products});
 });
+router.get('/add-product',function(req,res){
+res.render('admin/add-product')
+})
 
 module.exports = router;
